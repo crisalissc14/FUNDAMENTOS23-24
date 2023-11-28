@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congreso Médico</title>
+    <link rel="stylesheet" href="./EvaPractica.css">
+</head>
+<body>
+    <div class="header">
+        <header class="header-contenedor" id="header">
+            <img src="./logo.jpg" alt="imagen hospital" height="100px">
+            <h1>Inscripción al Congreso de Medicina Santiago 2048</h1>
+        </header>
+    </div>
+    <br> <br>
+    <div class="contenedor">
+        <form id="formulario-especialistas" class="formulario-congreso">
+            <h2>Inscripción al Congreso para Médicos Especialistas</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="especialidad">Especialidad:</label>
+            <input type="text" id="especialidad" name="especialidad" required>
+
+            <label for="anioEspecialidad">Año de obtención de la especialidad:</label>
+            <input type="number" id="anioEspecialidad" name="anioEspecialidad" required min="0">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <form id="formulario-generalistas" class="formulario-congreso">
+            <h2>Inscripción al Congreso para Médicos Generalistas</h2>
+            <label for="nombreGeneral">Nombre:</label>
+            <input type="text" id="nombreGeneral" name="nombreGeneral" required>
+            
+            <label for="apellidosGeneral">Apellidos:</label>
+            <input type="text" id="apellidosGeneral" name="apellidosGeneral" required>
+
+            <label for="centroMedico">Centro Médico donde ejerce:</label>
+            <input type="text" id="centroMedico" name="centroMedico" required>
+
+            <label for="anioTitulo">Año de obtención del título:</label>
+            <input type="number" id="anioTitulo" name="anioTitulo" required min="0">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
