@@ -4,3 +4,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Clase main */
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+/* seccion  */
+.section-1{
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(90deg, #ce37ce, #ff5500);
+    padding: 1.5em;
+}
+/* header */
+.header{
+    background-color: #2d2f32;
+    width: 100%;
+    height: 2.5em;
+
+    display: flex;
+    flex-direction: row;
+}
+/* clase div */
+.img{
+    background-color: #2d2f32;
+    width: 25%;
+    height: 100%;
+
+}
+/* menu barra */
+.menu{
+    /* background-color: #ff5500; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* logo */
+.img img{
+    object-fit: cover;
+    height: 100%;
+}
+
+/* menu (padre) clases hijas "a"*/
+.menu a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+    /* 1 em= 16 pixeles */
+}
+
+
+/* finaliza sección 1 */
+
+
