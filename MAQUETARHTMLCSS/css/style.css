@@ -59,6 +59,16 @@
     /* 1 em= 16 pixeles */
 }
 
+.header{
+    background-color: black;
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* overflow para ocultar  */
+}
+
 
 /* finaliza sección 1 */
 
