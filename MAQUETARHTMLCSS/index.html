@@ -1,120 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina web de Energía Hidraúlica</title>
-    <!-- link de pagina -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <!-- etiqueta main -->
     <main class="main">
-        <!-- agregar 3 secciones -->
-        <!-- Seccción 1 -->
         <section class="contenedor section-1">
             <header class="header">
                 <div class="img">
-                    <img src="./Img/logo.png" alt="logo de la aplicacion">
+                    <img src="img/logo.png" alt="logo de la aplicacion">
                 </div>
-                <!-- enlaces -->
                 <nav class="menu">
-                    <a href="#">Inicio</a>
+                    <a href="#" onclick="showTab('inicio')" data-tab="inicio">Inicio</a>
                     <a href="#">Conozcanos</a>
                     <a href="#">Servicios</a>
                     <a href="#">Galería</a>
                     <a href="#">Clientes</a>
                     <a href="#">Blog</a>
-                    <a href="#">Contactos</a>
+                    <a href="#">Contacto</a>
                 </nav>
             </header>
         </section>
-        <!-- Sección 2 -->
-        <section class="contenedor section-2">
+
+        <section class="contenedor_section_2">
             <article class="s2-textos">
-            <h1>Bienvenidos</h1>
-            <br>
-            <hr>
-            <p>Hola bienvenidos a la pagina web de la energía Hidraúlica
-                aprovechamiento de la energía cinética de una masa de agua. El agua mueve una
-                turbina cuyo movimiento de rotación se transfiere, mediante un eje, a un generador de electricidad.
-            </p>
-        </article>
-        <!-- article 2 -->
-        <!-- parte 1 -->
-        <article class="s2-img">
-            <aside class="contenido.imh">
-                <div class="contenido-img">
-                    <img src="Img/img1.png" alt="">
+                <h1>BIENVENIDOS</h1>
+                <br>
+                <hr class="hr_seccion2">
+                <div class="p1">
+                    <p>Nuestra misión es elevar continuamente el nivel de la experiencia del cliente mediante el uso de
+                        Internet y la tecnología para ayudar a los consumidores a encontrar, descubrir y comprar
+                        cualquier cosa, y capacitar a las empresas y los creadores de contenido para maximizar su éxito.
+                    </p>
                 </div>
+            </article>
 
-                <div class="contenido-texto">
-                    <h2>Represas hidraulicas</h2>
-                    <p>La energía hidráulica se obtiene a partir de la fuerza cinética que
-                        genera el agua al fluir con fuerza. Es una fuente de energía renovable
-                        que actualmente se usa para generar electricidad. </p>
-                        <a href="#">Ver más</a>
-                </div>
-            </aside>
-
-        <!-- parte 2 -->
-        
-            <aside class="contenido.imh">
-                <div class="contenido-img">
-                    <img src="Img/img2.png" alt="">
-                </div>
-
-                <div class="contenido-texto">
-                    <h2>Represas hidraulicas</h2>
-                    <p>La energía hidráulica se obtiene a partir de la fuerza cinética que
-                        genera el agua al fluir con fuerza. Es una fuente de energía renovable
-                        que actualmente se usa para generar electricidad. </p>
-                        <a href="#">Ver más</a>
-                </div>
-            </aside>
-
-        <!-- parte 3 -->
-            <aside class="contenido.imh">
-                <div class="contenido-img">
-                    <img src="Img/img3.png" alt="">
-                </div>
-
-                <div class="contenido-texto">
-                    <h2>Represas hidraulicas</h2>
-                    <p>La energía hidráulica se obtiene a partir de la fuerza cinética que
-                        genera el agua al fluir con fuerza. Es una fuente de energía renovable
-                        que actualmente se usa para generar electricidad. </p>
-                        <a href="#">Ver más</a>
-                </div>
-            </aside>
-        </article>
+            <div class="columnas">
+                <article class="columna">
+                    <div class="contenidoMultimedia">
+                        <img class="contenidoMultimedia" src="img/img-1.jpg" alt="panel solar">
+                    </div>
+                    <br>
+                    <center>
+                        <h2>Ingenieria industrial</h2>
+                    </center>
+                    <br>
+                    <p>Abarcamos una amplia gama de campos relacionados con ingenieria, tanto en edificacion como en
+                        industria Electricidad climatizacion, ventilacion, hidraulica y neumatica, etc</p>
+                    <br>
+                    <button class="ver-mas-btn">VER MÁS</button>
+                </article>
+                <article class="columna">
+                    <div class="contenidoMultimedia">
+                        <img class="contenidoMultimedia" src="img/img-2.jpg" alt="infrarojo">
+                    </div>
+                    <br>
+                    <center>
+                        <h2>Ingenieria inflaroja</h2>
+                    </center>
+                    <br>
+                    <p>Identifique los puntos criticos de su instalación para llevar a cabo un mantenimiento preventivo
+                        sin aplicar métodos destructivos, ni poner en riesgo al personal de inspección.</p>
+                    <br>
+                    <br>
+                    <button class="ver-mas-btn">VER MÁS</button>
+                </article>
+                <article class="columna">
+                    <div class="contenidoMultimedia">
+                        <img class="contenidoMultimedia" src="img/img-3.jpg" alt="ahorro energia">
+                    </div>
+                    <br>
+                    <center>
+                        <h2>Energías renovables</h2>
+                    </center>
+                    <p>Conozca con detalle la situación energética real de su actividad, posibilitando la detección de
+                        anomalías, con el fin de implantar las medidas correctivas necesarias para optimizar su consumo
+                    </p>
+                    <br>
+                    <br>
+                    <button class="ver-mas-btn">VER MÁS</button>
+                </article>
+            </div>
         </section>
-        <!-- Sección3 3 -->
-        <section class="contenedor section-3">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="contenedor_seccion3">
+            <div class="seccion3_elementos">
+                <div class="img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="s3-textos">
+                    <h3>Estamos en:</h3>
+                    <p>Avenida General Rumiñahui</p>
+                    <p>Número 144, Gonzales Suarez</p>
+                    <p>Telf: 032714335</p>
+                    <a href="#">información@grupo.com</a>
+                    <br>
+                </div>
+            </div>
             <hr>
-            <!-- div imagen logo -->
-            <div class="s3-logo">
-                <img src="Img/logo.png" alt="">
-            </div>
-            <!-- div para los textos -->
-            <div class="s3-textos">
-                <h3>Estamos en:</h3>
-                <p>Avenida General Rumiñahui</p>
-                <p>Número 144, Gonzales Suarez</p>
-                <p>Telf: 032714335</p>
-                <a href="#">información@grupo.com</a>
-            </div>
-
-            <!-- div para el footer -->
-            <footer>
+            <footer class="footer">
                 &copy;Todos los derechos reservados 2023.
             </footer>
-
-
         </section>
-
-
-
     </main>
 </body>
+
 </html>

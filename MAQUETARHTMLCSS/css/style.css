@@ -1,75 +1,205 @@
-/* Estilos generales */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
 }
 
 /* Clase main */
-.main{
+.main {
     width: 100%;
     height: 100%;
-}
-
-/* seccion  */
-.section-1{
-    width: 100%;
-    height: 160px;
-    background: linear-gradient(90deg, #ce37ce, #ff5500);
-    padding: 1.5em;
-}
-/* header */
-.header{
-    background-color: #2d2f32;
-    width: 100%;
-    height: 2.5em;
-
-    display: flex;
-    flex-direction: row;
-}
-/* clase div */
-.img{
-    background-color: #2d2f32;
-    width: 25%;
-    height: 100%;
-
-}
-/* menu barra */
-.menu{
-    /* background-color: #ff5500; */
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
 }
 
 /* logo */
-.img img{
+.img img {
     object-fit: cover;
     height: 100%;
 }
 
-/* menu (padre) clases hijas "a"*/
-.menu a{
+/* seccion 1, header*/
+.section-1 {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(90deg, #ce37ce, #ff5500);
+    padding: 1.5em;
+}
+
+.header {
+    background-color: #2d2f32;
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* overflow para ocultar */
+}
+
+/* menu barra con alineacion*/
+.menu {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: last baseline;
+}
+
+.menu a {
     display: flex;
     text-decoration: none;
     color: white;
     padding: 0 1em;
-    /* 1 em= 16 pixeles */
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease; /* Agregado para la transición del color */
 }
 
-.header{
-    background-color: black;
-    width: 100%;
-    height: 3.5em;
+.menu a:hover {
+    color: #ff5500; /* Cambia el color al hacer hover */
+    transform: scale(1.1); /* Ajusta el valor según tus preferencias */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+/* Resaltar el botón de la sección seleccionada */
+.menu a.active {
+    color: #ff5500; /* Color para la sección activa */
+}
+/* función para el resaltado de las secciones de la barra de navegación */
+.menu a:hover,
+.menu a:focus {
+    background-color: #ff5500; /* Color naranja */
+    border-radius: 5px; /* Borde redondeado, ajusta según sea necesario */
+    color: white; /* Color del texto */
+    transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo */
+}
+/* clase div */
+.img {
+    background-color: #2d2f32;
+    width: 25%;
+    height: 100%;
+}
+
+/*contenedor, binvenidos y parrafo*/
+.columnas {
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    /* overflow para ocultar  */
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
 }
 
+.columna {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+}
 
-/* finaliza sección 1 */
+.contenidoMultimedia {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 
+h1 {
+    margin-top: 25px;
+    text-align: center;
+}
 
+.hr_seccion2 {
+    width: 4%;
+    margin-left: 48%;
+    margin-bottom: 15px;
+    background-color: #ff5500;
+    height: 4px;
+    text-align: center;
+}
+
+.p1 {
+    margin-left: 50px;
+}
+
+/*Footerr*/
+.contenedor_seccion3 {
+    background: linear-gradient(90deg, #ce37ce, #ff5500);
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_seccion3 {
+    background-color: #2d2f32;
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.seccion3_elementos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2f32;
+    width: 100%;
+    height: 90%;
+    margin-top: 4px;
+}
+
+.s3-textos {
+    padding-top: 5px;
+    color: white;
+    font-size: 8.5px;
+    background-color: #2d2f32;
+    width: 25%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.s3-textos a {
+    color: white;
+}
+
+.footer {
+    background-color: #2d2f32;
+    padding-left: 30px;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    line-height: 3;
+    position: fixed;
+}
+
+.img img {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 5px;
+    height: 70%;
+}
+
+/* Botón "VER MÁS" */
+.ver-mas-btn {
+    background-color: #ff5500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo del título de cada columna */
+.columna h2 {
+    color: #ff0000;
+}
