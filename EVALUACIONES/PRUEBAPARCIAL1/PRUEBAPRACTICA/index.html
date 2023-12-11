@@ -4,49 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigación de Mercado de Contoso</title>
+    <title>Contoso Travel</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="import" href="fontaw">
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">Contoso</div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Introducción</a></li>
-                <li><a href="#">Metodología</a></li>
-                <li><a href="#">Resultados</a></li>
-                <li><a href="#">Conclusiones</a></li>
-            </ul>
-        </nav>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="office365-icon.png" alt="Office 365">
+            <span>SharePoint</span>
+        </div>
+        <div class="brand">
+            <img src="mountain-icon.png" alt="Montañas">
+            <span>Contoso Travel</span>
+        </div>
+        <div class="user-actions">
+            <img src="skype-icon.png" alt="Skype">
+            <img src="notification-icon.png" alt="Notificaciones">
+            <img src="settings-icon.png" alt="Ajustes">
+            <img src="question-icon.png" alt="Preguntas">
+            <img src="profile-icon.png" alt="Perfil">
+        </div>
     </header>
 
-    <section class="main-content">
-        <article class="section">
-            <h2>Introducción</h2>
-            <p>Tu contenido aquí...</p>
-        </article>
+    <main>
+        <section class="research-section">
+            <div class="research-header">
+                <img src="research-icon.png" alt="Icono de investigación">
+                <h2>Investigación de Mercado de Contoso</h2>
+                <div class="research-tools">
+                    <div class="search-bar">
+                        <img src="search-icon.png" alt="Icono de búsqueda">
+                        <input type="text" placeholder="Buscar">
+                    </div>
+                    <img src="star-icon.png" alt="Icono de estrella">
+                    <span>Seguir</span>
+                    <img src="share-icon.png" alt="Icono de compartir">
+                    <span>Compartir Sitio</span>
+                </div>
+            </div>
+            <nav class="research-navigation">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nuestro Equipo</a></li>
+                    <li><a href="#">Nuestra Investigación</a></li>
+                    <li><a href="#">Informes de Investigación</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Agrega esta sección dentro de tu main-section en el código HTML existente -->
+        <section class="main-section">
+            <h2>Elemento Principal</h2>
+            <div class="elemento-principal">
+                <div class="imagen-principal">
+                    <img src="./img/img1-5.png" alt="Imagen Principal">
+                </div>
+                <div class="imagenes-secundarias">
+                    <div class="imagen">
+                        <img src="./img/img1-1.png" alt="Imagen 1" height="20" width="20">
+                    </div>
+                    <div class="imagen">
+                        <img src="./img/img1-2.png" alt="Imagen 2"height="20" width="20">
+                    </div>
+                    <div class="imagen">
+                        <img src="./img/img1-3.png" alt="Imagen 3" height="20" width="20">
+                    </div>
+                    <div class="imagen">
+                        <img src="./img/img1-4.png" alt="Imagen 4"height="20" width="20">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="section">
-            <h2>Metodología</h2>
-            <p>Tu contenido aquí...</p>
-        </article>
+        <!-- Sección de Noticias -->
+        <section class="news-section">
+            <!-- Noticia 1 -->
+            <div class="noticia">
+                <img src="imagen_noticia_1.jpg" alt="Imagen Noticia 1">
+                <h2>Noticia 1</h2>
+                <p>Texto de la noticia 1...</p>
+            </div>
+            
+            <!-- Noticia 2 -->
+            <div class="noticia">
+                <img src="imagen_noticia_2.jpg" alt="Imagen Noticia 2">
+                <h2>Noticia 2</h2>
+                <p>Texto de la noticia 2...</p>
+            </div>
+            
+            <!-- Noticia 3 -->
+            <div class="noticia">
+                <img src="imagen_noticia_3.jpg" alt="Imagen Noticia 3">
+                <h2>Noticia 3</h2>
+                <p>Texto de la noticia 3...</p>
+            </div>
+            
+            <!-- Noticia 4 -->
+            <div class="noticia">
+                <img src="imagen_noticia_4.jpg" alt="Imagen Noticia 4">
+                <h2>Noticia 4</h2>
+                <p>Texto de la noticia 4...</p>
+            </div>
+        </section>
+        <section class="events-section">
+            <!-- Próximos eventos -->
+            <div class="event-section">
+                <h2>Próximos eventos</h2>
+                <div class="add-event-icon">
+                <i class="fas fa-plus"></i>
+                </div>
+                <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-date">
+                    <img src="calendario1.jpg" alt="Calendario 1">
+                    </div>
+                    <div class="event-details">
+                    <h3>Evento 1</h3>
+                    <p>Fecha: 10 de enero</p>
+                    <p>Hora: 14:00</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                <div class="event-date">
+                    <img src="calendario2.jpg" alt="Calendario 2">
+                    </div>
+                    <div class="event-details">
+                    <h3>Evento 2</h3>
+                    <p>Fecha: 15 de enero</p>
+                    <p>Hora: 18:30</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                    <img src="calendario3.jpg" alt="Calendario 3">
+                    </div>
+                    <div class="event-details">
+                    <h3>Evento 3</h3>
+                    <p>Fecha: 20 de enero</p>
+                    <p>Hora: 12:00</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                    <img src="calendario4.jpg" alt="Calendario 4">
+                    </div>
+                    <div class="event-details">
+                    <h3>Evento 4</h3>
+                    <p>Fecha: 25 de enero</p>
+                    <p>Hora: 16:45</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="section">
-            <h2>Resultados</h2>
-            <p>Tu contenido aquí...</p>
-        </article>
+        <!-- Contenido Resaltado -->
+        <!-- Sección de Contenido Resaltado -->
+    <section class="highlight-section">
+        <!-- Contenido Resaltado 1 -->
+        <div class="contenido-destacado">
+            <img src="imagen_destacada_1.jpg" alt="Imagen Destacada 1">
+            <h2>Subtítulo 1</h2>
+            <p>Texto del contenido resaltado 1...</p>
+            <div class="perfil">
+                <img src="perfil_usuario_1.jpg" alt="Perfil Usuario 1">
+                <span>Nombre del Usuario</span>
+                <span>Hace 2 horas</span>
+            </div>
+        </div>
 
-        <article class="section">
-            <h2>Conclusiones</h2>
-            <p>Tu contenido aquí...</p>
-        </article>
+        <!-- Contenido Resaltado 2 -->
+        <div class="contenido-destacado">
+            <img src="imagen_destacada_2.jpg" alt="Imagen Destacada 2">
+            <h2>Subtítulo 2</h2>
+            <p>Texto del contenido resaltado 2...</p>
+            <div class="perfil">
+                <img src="perfil_usuario_2.jpg" alt="Perfil Usuario 2">
+                <span>Nombre del Usuario</span>
+                <span>Hace 1 hora</span>
+            </div>
+        </div>
+
+        <!-- Contenido Resaltado 3 -->
+        <div class="contenido-destacado">
+            <img src="imagen_destacada_3.jpg" alt="Imagen Destacada 3">
+            <h2>Subtítulo 3</h2>
+            <p>Texto del contenido resaltado 3...</p>
+            <div class="perfil">
+                <img src="perfil_usuario_3.jpg" alt="Perfil Usuario 3">
+                <span>Nombre del Usuario</span>
+                <span>Hace 3 horas</span>
+            </div>
+        </div>
+
+        <!-- Contenido Resaltado 4 -->
+        <div class="contenido-destacado">
+            <img src="imagen_destacada_4.jpg" alt="Imagen Destacada 4">
+            <h2>Subtítulo 4</h2>
+            <p>Texto del contenido resaltado 4...</p>
+            <div class="perfil">
+                <img src="perfil_usuario_4.jpg" alt="Perfil Usuario 4">
+                <span>Nombre del Usuario</span>
+                <span>Hace 4 horas</span>
+            </div>
+        </div>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2023 Contoso. Todos los derechos reservados.</p>
-    </footer>
+        <!-- Vinculos rapidos -->
+        <section class="vinculos-rapidos">
+            <h2>Recursos Adicionales</h2>
+            <br>
+            <br>
+            <div class="vinculo">
+            <img src="icono1.png" alt="Icono 1">
+            <p>Texto 1</p>
+            </div>
+            <div class="vinculo">
+            <img src="icono2.png" alt="Icono 2">
+            <p>Texto 2</p>
+            </div>
+            <div class="vinculo">
+            <img src="icono3.png" alt="Icono 3">
+            <p>Texto 3</p>
+            </div>
+            <div class="vinculo">
+            <img src="icono4.png" alt="Icono 4">
+            <p>Texto 4</p>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <!-- Contactos -->
+            <section class="contactos">
+                <h2>Contactos</h2>
+                <div class="perfil-contacto">
+                  <img src="perfil1.png" alt="Perfil 1">
+                  <h3>Nombre del Contacto 1</h3>
+                  <p>Información de contacto 1</p>
+                </div>
+                <div class="perfil-contacto">
+                  <img src="perfil2.png" alt="Perfil 2">
+                  <h3>Nombre del Contacto 2</h3>
+                  <p>Información de contacto 2</p>
+                </div>
+              </section>
+        </section>
+    </main>
 </body>
 
 </html>
