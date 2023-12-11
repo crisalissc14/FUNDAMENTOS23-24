@@ -5,10 +5,10 @@ const urlsToCache = [
     '/',
     '/index.html',
     '../css/style.css',  // Ruta relativa
-    '../Img/logo.png',   // Ruta relativa
-    '../Img/img-1.jpg',  // Ruta relativa
-    '../Img/img-2.jpg',  // Ruta relativa
-    '../Img/img-3.jpg',  // Ruta relativa
+    '../img/logo.png',   // Ruta relativa
+    '../img/img-1.jpg',  // Ruta relativa
+    '../img/img-2.jpg',  // Ruta relativa
+    '../img/img-3.jpg',  // Ruta relativa
 ];
 
 self.addEventListener('install', (event) => {
