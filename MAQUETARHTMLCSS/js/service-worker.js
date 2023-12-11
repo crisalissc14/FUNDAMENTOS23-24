@@ -1,14 +1,12 @@
-// service-worker.js
-
 const CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
     '/',
     '/index.html',
-    '../css/style.css',  // Ruta relativa
-    '../img/logo.png',   // Ruta relativa
-    '../img/img-1.jpg',  // Ruta relativa
-    '../img/img-2.jpg',  // Ruta relativa
-    '../img/img-3.jpg',  // Ruta relativa
+    '/css/style.css',  // Ajusta la ruta si la carpeta 'css' está en la raíz del proyecto
+    '/img/logo.png',   // Ajusta la ruta si la carpeta 'img' está en la raíz del proyecto
+    '/img/img-1.jpg',  // Ajusta la ruta si la carpeta 'img' está en la raíz del proyecto
+    '/img/img-2.jpg',  // Ajusta la ruta si la carpeta 'img' está en la raíz del proyecto
+    '/img/img-3.jpg',  // Ajusta la ruta si la carpeta 'img' está en la raíz del proyecto
 ];
 
 self.addEventListener('install', (event) => {

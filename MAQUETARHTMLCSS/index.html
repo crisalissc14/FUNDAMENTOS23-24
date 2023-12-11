@@ -115,16 +115,24 @@
     </main>
 </body>
     <!-- service worker -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/js/service-worker.js')  // Asegúrate de que la ruta sea correcta
-                .then((registration) => {
-                    console.log('Service Worker registrado con éxito:', registration);
-                })
-                .catch((error) => {
-                    console.error('Error al registrar el Service Worker:', error);
-                });
-        }
-    </script>
+    <link rel="stylesheet" href="/css/style.css">
+<img src="/img/logo.png" alt="logo de la aplicación">
+<img src="/img/img-1.jpg" alt="panel solar">
+<img src="/img/img-2.jpg" alt="infrarrojo">
+<img src="/img/img-3.jpg" alt="ahorro de energía">
+
+<!-- Ajusta la ruta en el script del Service Worker -->
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/js/service-worker.js')
+            .then((registration) => {
+                console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch((error) => {
+                console.error('Error al registrar el Service Worker:', error);
+            });
+    }
+</script>
+
 
 </html>
