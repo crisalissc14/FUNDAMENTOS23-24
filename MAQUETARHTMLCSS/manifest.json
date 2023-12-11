@@ -1,7 +1,7 @@
 {
-    "name": "Energía Hidraúlica",
+    "name": "Energía",
     "short_name": "EH",
-    "description": "Sitio web de Energía Hidraúlica",
+    "description": "Sitio web de Energía",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",

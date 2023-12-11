@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web de Energía Hidraúlica</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="manifest" href="/manifest.json" />
+    <title>Pagina web de Energía</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="./manifest.json" />
 
 </head>
 
@@ -15,7 +14,7 @@
         <section class="contenedor section-1">
             <header class="header">
                 <div class="img">
-                    <img src="/MATERIAL/logo.png" alt="logo de la aplicacion">
+                    <img src="./img/logo.png" alt="logo de la aplicacion">
                 </div>
                 <nav class="menu">
                     <a href="#">INICIO</a>
@@ -45,7 +44,7 @@
             <div class="columnas">
                 <article class="columna">
                     <div class="contenidoMultimedia">
-                        <img class="contenidoMultimedia" src="/MATERIAL/img-1.jpg" alt="panel solar">
+                        <img class="contenidoMultimedia" src="./img/img-1.jpg" alt="panel solar">
                     </div>
                     <br>
                     <h2>Ingenieria industrial</h2>
@@ -59,7 +58,7 @@
                 </article>
                 <article class="columna">
                     <div class="contenidoMultimedia">
-                        <img class="contenidoMultimedia" src="/MATERIAL/img-2.jpg" alt="infrarojo">
+                        <img class="contenidoMultimedia" src="./img/img-2.jpg" alt="infrarojo">
                     </div>
                     <br>
                     <h2>Ingenieria infrarroja</h2>
@@ -73,7 +72,7 @@
                 </article>
                 <article class="columna">
                     <div class="contenidoMultimedia">
-                        <img class="contenidoMultimedia" src="/MATERIAL/img-3.jpg" alt="ahorro energia">
+                        <img class="contenidoMultimedia" src="./img/img-3.jpg" alt="ahorro energia">
                     </div>
                     <br>
                     <h2>Energías renovables</h2>
@@ -95,7 +94,7 @@
         <section class="contenedor_seccion3">
             <div class="seccion3_elementos">
                 <div class="img">
-                    <img src="/MATERIAL/logo.png" alt="">
+                    <img src="./img/logo.png" alt="">
                 </div>
                 <div class="s3-textos">
                     <br>
@@ -115,7 +114,7 @@
     </main>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
+            navigator.serviceWorker.register('/serive-worker.js')
                 .then(registration => {
                     console.log('Service Worker registrado con éxito:', registration);
                 })
