@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina web de Energía</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="/manifest.json">
 </head>
 
 <body>
@@ -40,7 +40,6 @@
                     </p>
                 </div>
             </article>
-
             <div class="columnas">
                 <article class="columna">
                     <div class="contenidoMultimedia">
@@ -113,26 +112,17 @@
             </footer>
         </section>
     </main>
+    <!-- Ajusta la ruta en el script del Service Worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/js/service-worker.js')
+                    .then((registration) => {
+                        console.log('Service Worker registrado con éxito:', registration);
+                    })
+                    .catch((error) => {
+                        console.error('Error al registrar el Service Worker:', error);
+                    });
+            }
+        </script>
 </body>
-    <!-- service worker -->
-    <link rel="stylesheet" href="/css/style.css">
-<img src="/img/logo.png" alt="logo de la aplicación">
-<img src="/img/img-1.jpg" alt="panel solar">
-<img src="/img/img-2.jpg" alt="infrarrojo">
-<img src="/img/img-3.jpg" alt="ahorro de energía">
-
-<!-- Ajusta la ruta en el script del Service Worker -->
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/js/service-worker.js')
-            .then((registration) => {
-                console.log('Service Worker registrado con éxito:', registration);
-            })
-            .catch((error) => {
-                console.error('Error al registrar el Service Worker:', error);
-            });
-    }
-</script>
-
-
 </html>

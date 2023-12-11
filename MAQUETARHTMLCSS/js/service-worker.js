@@ -2,6 +2,7 @@ const CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
     '/',
     '/index.html',
+    '/manifest.json',
     '/css/style.css',  // Ajusta la ruta si la carpeta 'css' está en la raíz del proyecto
     '/img/logo.png',   // Ajusta la ruta si la carpeta 'img' está en la raíz del proyecto
     '/img/img-1.jpg',  // Ajusta la ruta si la carpeta 'img' está en la raíz del proyecto
