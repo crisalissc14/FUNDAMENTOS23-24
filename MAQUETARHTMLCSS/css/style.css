@@ -198,6 +198,11 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
+.ver-mas-btn:hover {
+    background-color: #e68656;
+    cursor: pointer;
+    color: white;
+}
 
 /* Estilo del título de cada columna */
 .columna h2 {
