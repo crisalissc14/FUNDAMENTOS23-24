@@ -1,0 +1,66 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(30, 30, 52);
+}
+
+.comment-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    margin-bottom: 15px;
+    border: 1px solid #558bff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comment .comment-wrapper {
+    width: 100%;
+}
+
+.comment .content {
+    display: flex;
+}
+
+.comment .user-photo {
+    margin-right: 10px;
+}
+
+.comment .coment-info {
+    flex-grow: 1;
+}
+
+.comment .coment-info .text {
+    margin-bottom: 10px;
+}
+
+.comment .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.comment .replies {
+    padding-top: 10px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.comment .replies::before {
+    /* content define el contenido o características del seudoelemento */
+    content: " ";
+    position: absolute;
+    background-color: #558bff;
+    width: 1px;
+    top: 0%;
+    height: calc(100%-53px);
+    /* se extiende hasta 53px por debajo del contenedor */
+
+}
