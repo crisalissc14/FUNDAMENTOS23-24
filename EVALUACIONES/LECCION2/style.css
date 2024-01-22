@@ -1,0 +1,101 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Comienza Seccion productos */
+.section-title {
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(250px,auto);
+    height: 100vh;
+}
+.product {
+    margin: 20px;
+    text-align: center;
+}
+.product img {
+    width: 120px; /* adjust width as needed */
+    height: auto; /* adjust height as needed */
+}
+.product-info {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.see-more-button {
+    display: block;
+    width: 200px; /* ajusta el ancho según sea necesario */
+    margin: 20px auto; /* centrar horizontalmente con margen superior e inferior */
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.see-more-button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* Termina seccion productos */
+
+.PROMOCION {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ajusta la altura según sea necesario */
+    background-color: #4f4aa6;
+    height: min-content;
+}
+.promotion-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.promotion-image {
+    max-width: 100%;
+    height: auto;
+    justify-self: end;
+}
+.promotion-content {
+    text-align: center;
+}
+
+.comentario-section {
+    text-align: center;
+    background: white;
+}
+.comentario-citado {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-section {
+    flex: 1;
+}
+.redes-sociales {
+    flex: 1;
+}
+.sobre-nosotros {
+    flex: 1;
+}
+.buscador {
+    flex: 1;
+}
