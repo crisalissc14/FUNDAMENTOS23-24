@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    background: linear-gradient(to bottom, #3498db, #004d40);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-container {
+    background: #101f2e; /* Fondo azul marino */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form {
+    width: 300px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  #agree {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .registerButton {
+    background: #2196F3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  

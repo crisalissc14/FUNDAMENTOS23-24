@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="registro.css">
+  <title>Formulario Registro</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", function(event) {
+        const firstNameInput = document.getElementById("firstName");
+        if (!/^[A-Za-z]{1,12}$/.test(firstNameInput.value)) {
+          alert("Por favor, ingresa un nombre válido (solo letras, hasta 12 caracteres).");
+          event.preventDefault();
+          return;
+        }
+
+        // Validar el campo de Apellido
+        const lastNameInput = document.getElementById("lastName");
+        if (!/^[A-Za-z]{1,12}$/.test(lastNameInput.value)) {
+          alert("Por favor, ingresa un apellido válido (solo letras, hasta 12 caracteres).");
+          event.preventDefault();
+          return;
+        }
+
+        // Validar el campo de Email
+        const emailInput = document.getElementById("email");
+        if (!/^\S+@\S+\.\S+$/.test(emailInput.value)) {
+          alert("Por favor, ingresa un correo electrónico válido.");
+          event.preventDefault();
+          return;
+        }
+
+        // Validar el campo de Contraseña
+        const passwordInput = document.getElementById("password");
+        if (!/(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}/.test(passwordInput.value)) {
+          alert("La contraseña debe contener al menos una letra mayúscula, una letra minúscula y un número, y tener al menos 8 caracteres.");
+          event.preventDefault(); 
+          return;
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Formulario Registro</h1>
+
+      <form>
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <div id="agree">
+          <input type="checkbox" id="agreeCheckbox" required>
+          <label for="agreeCheckbox">Estoy de acuerdo con los Términos y Condiciones</label>
+        </div>
+
+        <button type="submit" class="registerButton">Registrar</button>
+      </form>
+
+      <p><a href="login.html">¿Ya tengo cuenta?</a></p>
+    </div>
+  </div>
+</body>
+</html>

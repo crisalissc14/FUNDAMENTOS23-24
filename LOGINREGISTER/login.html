@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login Form</title>
+</head>
+<body>
+  <div class="buttons">
+    <button id="loginBtn" class="button" onclick="validateLogin()">Login</button>
+    <button id="registerBtn" class="button" onclick="redirectToRegistration()">Register</button>
+  </div>
+
+  <div class="icons">
+    <img src="https://img.freepik.com/vector-premium/icono-aplicacion-facebook-logotipo-redes-sociales-ilustracion-vectorial-meta_277909-402.jpg" alt="Facebook Icon" class="icon">
+    <img src="https://img.freepik.com/vector-premium/icono-instagram-logotipo-insignia-moderna_578229-124.jpg" alt="Instagram Icon" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Close Icon" class="icon">
+  </div>
+
+  <div>
+    <label for="userId" placeholder=" User id">User ID:</label>
+    <br>
+    <br>
+    <input type="text" id="userId">
+  </div>
+<br>
+<br>
+<br>
+  <div>
+    <label for="password">Enter Password:</label>
+    <br>
+  
+    <br>
+
+    <input type="password" id="password">
+  </div>
+
+  <div id="remember">
+    <input type="checkbox" id="rememberCheckbox">
+    <label for="rememberCheckbox">Remember password</label>
+  </div>
+
+  <button id="loginButton" class="button" onclick="validateLogin()">Login In</button>
+
+  <script src="script.js"></script>
+
+  <script>
+    function redirectToRegistration() {
+      window.location.href = "Registro.html";
+    }
+  </script>
+</body>
+</html>

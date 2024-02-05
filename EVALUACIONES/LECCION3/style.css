@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+
+  .container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .forms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    display: none;
+    width: 100%;
+  }
+
+  .active-form {
+    display: block;
+  }
+
+  .input-field {
+    margin-bottom: 15px;
+  }
+
+  .input-field label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .login-btn {
+    background-color: #333;
+  }
+
+  .register-btn {
+    background-color: #28a745;
+  }
