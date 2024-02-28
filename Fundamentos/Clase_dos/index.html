@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página 1</title>
+  </head>
+  <body>
+    <h1>Página 1</h1>
+    <p>Este es el contenido de la página</p>
+  
+    <script>
+      let nota1, nota2, nota3;
+
+      // Funcion validar las notas del 1 al 20
+      function validarNota(nota){
+        return !isNaN(nota)&&nota>=1 && nota<=20;
+      }
+      // solicitar el ingreso de notas
+      do{
+        nota1=prompt('Ingrese nota 1');
+        nota1=parseInt(nota1);
+      } while(validarNota(nota1))
+
+      do{
+        nota2=prompt('Ingrese nota 2');
+        nota2=parseInt(nota2);
+      } while(validarNota(nota2))
+
+      do{
+        nota3=prompt('Ingrese nota 3');
+        nota3=parseInt(nota3);
+      } while(validarNota(nota3))
+
+
+      // nota1 = prompt('Ingrese la primera nota:');
+      // nota2 = prompt('Ingrese la segunda nota:');
+      // nota3 = prompt('Ingrese la tercera nota:');
+  
+      // // Convertir lo que se recibe en enteros
+      // nota1 = parseInt(nota1);
+      // nota2 = parseInt(nota2);
+      // nota3 = parseInt(nota3);
+  
+      let promedio = (nota1 + nota2 + nota3) / 3;
+  
+      if (promedio > 18) {
+        console.log('Aprobado');
+      } else if (promedio >= 13 && promedio <= 15) {
+        console.log('Supletorio');
+      } else {
+        console.log('Reprobado');
+      }
+    </script>
+  </body>
+</html>

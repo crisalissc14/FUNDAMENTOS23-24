@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fecha en Texto</h1>
+    <input type="number" id="dia" placeholder="Ingresar día">
+    <input type="number" id="mes" placeholder="Ingresar mes">
+    <input type="number" id="anio" placeholder="Ingresar año">
+    <button onclick="mostrarFecha()">Mostrar Fecha</button>
+    <p id="resultado"></p>
+
+    <script>
+    function mostrarFecha() {
+        // Obtener los valores de día, mes y año ingresados por el usuario
+        var dia = parseInt(document.getElementById("dia").value);
+        var mes = parseInt(document.getElementById("mes").value);
+        var año = parseInt(document.getElementById("anio").value);
+
+        // Verificar que el mes no sea mayor a 12
+        if (mes > 12) {
+            document.getElementById("resultado").innerHTML = "Mes no válido";
+        } else {
+            // Llamar a la función fechaEnTexto y mostrar el resultado en el elemento con el id "resultado"
+            document.getElementById("resultado").innerHTML = fechaEnTexto(dia, mes, año);
+        }
+    }
+    </script>
+
+    <script>
+        function fechaEnTexto(dia, mes, año) {
+        var mensaje;
+
+        // Utilizamos un switch para redactar la fecha en texto
+        switch (mes) {
+            case 1:
+            mensaje = "La fecha ingresada es el " + dia + " de enero de " + año;
+            break;
+            case 2:
+            mensaje = "La fecha ingresada es el " + dia + " de febrero de " + año;
+            break;
+            case 3:
+            mensaje = "La fecha ingresada es el " + dia + " de marzo de " + año;
+            break;
+            case 4:
+            mensaje = "La fecha ingresada es el " + dia + " de abril de " + año;
+            break;
+            case 5:
+            mensaje = "La fecha ingresada es el " + dia + " de mayo de " + año;
+            break;
+            case 6:
+            mensaje = "La fecha ingresada es el " + dia + " de junio de " + año;
+            break;
+            case 7:
+            mensaje = "La fecha ingresada es el " + dia + " de julio de " + año;
+            break;
+            case 8:
+            mensaje = "La fecha ingresada es el " + dia + " de agosto de " + año;
+            break;
+            case 9:
+            mensaje = "La fecha ingresada es el " + dia + " de septiembre de " + año;
+            break;
+            case 10:
+            mensaje = "La fecha ingresada es el " + dia + " de octubre de " + año;
+            break;
+            case 11:
+            mensaje = "La fecha ingresada es el " + dia + " de noviembre de " + año;
+            break;
+            case 12:
+            mensaje = "La fecha ingresada es el " + dia + " de diciembre de " + año;
+            break;
+            default:
+            mensaje = "Fecha no válida";
+        }
+        
+        // Retornar el mensaje
+        return mensaje;
+        }
+    </script>
+</body>
+</html>

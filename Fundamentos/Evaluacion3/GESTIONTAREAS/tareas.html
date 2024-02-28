@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Gestion de Tareas</title>
+    <link rel="stylesheet" href="css/tareas.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Gestion de Tareas</h1>
+        <input type="text" id="txtTarea" placeholder="Nueva tarea">
+        <input type="text" id="txtDescripcion" placeholder="Descripción">
+        <input type="text" id="txtEstado" placeholder="Estado (Pendiente, En curso, Terminada)">
+        <button id="btnAgregar">Agregar</button>
+        <button id="btnActualizar">Actualizar</button>
+        <button id="btnEliminar">Eliminar</button>
+        <input type="text" id="txtBuscar" placeholder="Buscar tarea">
+        <button id="btnBuscar" onclick="buscarTarea()">Buscar</button>
+
+    </div>
+    <br>
+    <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Tarea</th>
+                    <th>Descripcion</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+                <!-- Aquí se van a cargar las tareas -->
+            </tbody>
+        </table>
+        
+    <script src="js/tareas.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="./calcular_notas.css">
+</head>
+
+<body>
+
+    <form id="formulario">
+      <label for="nota1">Nota 1 (1-20):</label>
+      <input type="text" id="nota1" required>
+  
+      <label for="nota2">Nota 2 (1-20):</label>
+      <input type="text" id="nota2" required>
+  
+      <label for="nota3">Nota 3 (1-20):</label>
+      <input type="text" id="nota3" required>
+  
+      <button type="button" onclick="calcularResultados()">Calcular Resultados</button>
+    </form>
+  
+    <div id="resultado"></div>
+  
+    <script>
+      function calcularSuma(notas) {
+        return notas.reduce((sum, nota) => sum + nota, 0);
+      }
+  
+      function calcularPromedio(notas) {
+        return calcularSuma(notas) / notas.length;
+      }
+  
+      function determinarAprobacion(promedio) {
+        return promedio >= 14 ? "Aprobado" : "Reprobado";
+      }
+  
+      
+      function calcularResultados() {
+        // Obtener los valores de las notas
+        var nota1 = parseInt(document.getElementById("nota1").value, 10);
+        var nota2 = parseInt(document.getElementById("nota2").value, 10);
+        var nota3 = parseInt(document.getElementById("nota3").value, 10);
+  
+        // Validar que las notas sean números enteros en el rango del 1 al 20
+        if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || nota1 < 1 || nota1 > 20 || nota2 < 1 || nota2 > 20 || nota3 < 1 || nota3 > 20) {
+          alert("Por favor, ingresa valores numéricos enteros en el rango del 1 al 20 para las notas.");
+          return;
+        }
+  
+        // Calcular la suma, el promedio y la aprobación
+        var notas = [nota1, nota2, nota3];
+        var suma = calcularSuma(notas);
+        var promedio = calcularPromedio(notas);
+        var aprobacion = determinarAprobacion(promedio);
+  
+        // Mostrar los resultados
+        var resultadoDiv = document.getElementById("resultado");
+        resultadoDiv.innerHTML =
+          "<p>Suma de notas: " + suma + "</p>" +
+          "<p>Promedio: " + promedio.toFixed(2) + "</p>" +
+          "<p>Resultado: " + aprobacion + "</p>";
+      }
+    </script>
+  
+  </body>
+  
+</html>

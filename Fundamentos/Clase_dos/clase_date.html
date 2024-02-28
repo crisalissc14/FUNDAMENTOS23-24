@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Date</title>
+</head>
+<body>
+    <script>
+        class Fecha {
+            constructor() {
+                this.fechaActual = new Date();
+            }
+
+            mostrarFecha() {
+                document.write('Hoy es ' + this.fechaActual.getDate() + '/' + (this.fechaActual.getMonth() + 1) + '/' + this.fechaActual.getFullYear() + '<br>');
+                document.write('Es la hora ' + this.fechaActual.getHours() + ':' + this.fechaActual.getMinutes() + ':' + this.fechaActual.getSeconds());
+            }
+        }
+
+        // Crear una instancia de la clase Fecha y llamar al método mostrarFecha
+        let fechaObj = new Fecha();
+        fechaObj.mostrarFecha();
+    </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Date</title>
+</head>
+<body>
+    <script>
+        function mostrarFecha(){
+            let fecha;
+            // crear un objeto de la clase Date
+            fecha=new Date();
+
+            document.write('Hoy es');
+            document.write(fecha.getDate()+'/');
+            document.write(fecha.getMonth()+'/');
+            document.write(fecha.getFullYear()+'/');
+            document.write('<br>');
+            document.write('Es la hora');
+            document.write(fecha.getHours()+'/');
+            document.write(fecha.getMinutes()+'/');
+            document.write(fecha.getSeconds()+'/');
+
+           
+
+            
+        }
+    </script>
+</body>
+</html> -->

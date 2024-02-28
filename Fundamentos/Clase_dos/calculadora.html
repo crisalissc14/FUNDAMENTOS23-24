@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <input type="number" id="grade1" placeholder="Ingresa nota 1" required>
+    <input type="number" id="grade2" placeholder="Ingresa nota 2" required>
+    <input type="number" id="grade3" placeholder="Ingresa nota 3" required>
+    <button onclick="calculate()">Calcular</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            var grade1 = parseFloat(document.getElementById('grade1').value);
+            var grade2 = parseFloat(document.getElementById('grade2').value);
+            var grade3 = parseFloat(document.getElementById('grade3').value);
+            if (grade1 < 1 || grade1 > 20 || grade2 < 1 || grade2 > 20 || grade3 < 1 || grade3 > 20) {
+                alert("Please enter grades between 1 and 20");
+                return;
+            }
+            var sum = grade1 + grade2 + grade3;
+            var average = sum / 3;
+            var result = document.getElementById('result');
+            result.innerHTML = "Suma: " + sum + "<br>Promedio: " + average;
+            if (average > 14) {
+                result.innerHTML += "<br>Aprobado!";
+            } else {
+                result.innerHTML += "<br>Reprobado";
+            }
+        }
+    </script>
+</body>
+</html>

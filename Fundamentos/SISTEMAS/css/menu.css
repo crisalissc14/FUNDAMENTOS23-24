@@ -1,0 +1,48 @@
+.container{
+    display:  flex ;
+}
+
+.sidebar{
+    width: 200px;
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover{
+    width: 250px;
+}
+
+.sidebar h2{
+    margin-bottom: 20px;
+    color: black;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul, li{
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* transicion suave de color al momento de pasar por encima */
+
+}
+
+.sidebar ul li a:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.content{
+    flex: 1;
+    padding: 20px;
+}

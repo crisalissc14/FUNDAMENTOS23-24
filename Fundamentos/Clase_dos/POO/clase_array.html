@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase ARRAY</title>
+</head>
+<body>
+    <script>
+                function cargarSueldos(sueldos){
+            for(let i=0; i<sueldos.length; i++){
+                let v = prompt('Ingrese el sueldo');
+                let sueldo = parseInt(v);
+                while (sueldo < 100 || sueldo > 1000) {
+                    v = prompt('El sueldo debe estar entre 100 y 1000. Ingrese nuevamente:');
+                    sueldo = parseInt(v);
+                }
+                sueldos[i] = sueldo;
+            }
+        }
+
+        // la suma total de sueldos
+        function calcularGastos(sueldos){
+            let total=0;
+            for(let i=0; i<sueldos.length; i++){ // Corregido "lenght" a "length"
+                total=total+sueldos[i];
+            }
+        
+            // visualizar los sueldos
+            document.write('Listado de los sueldos <br>');
+            
+            for(let i=0; i<sueldos.length; i++){ // Corregido "lenght" a "length"
+                document.write(sueldos[i]+'<br>')
+            }
+            document.write('Total de los gastos sueldos: '+total); // Corregido '+' a '+'
+        }
+
+        let sueldos;
+        sueldos=new Array(3);
+        cargarSueldos(sueldos);
+        calcularGastos(sueldos);
+    </script>
+</body>
+</html>

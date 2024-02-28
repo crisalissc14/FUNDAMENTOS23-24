@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertirNumeroEnTexto(numero) {
+          var texto;
+          
+          // Utilizamos un switch para convertir el número en texto
+          switch (numero) {
+            case 0:
+              texto = "cero";
+              break;
+            case 1:
+              texto = "uno";
+              break;
+            case 2:
+              texto = "dos";
+              break;
+            case 3:
+              texto = "tres";
+              break;
+            case 4:
+              texto = "cuatro";
+              break;
+            case 5:
+              texto = "cinco";
+              break;
+            // Añadir los casos para los demás números si es necesario
+          
+            default:
+              texto = "Número no válido";
+          }
+          
+          // Retornar el valor en texto
+          return texto;
+        }
+        </script>
+
+            <h1>Convertir Número a Texto</h1>
+            <input type="number" id="numero" placeholder="Ingresar número">
+            <button onclick="mostrarTexto()">Convertir</button>
+            <p id="resultado"></p>
+
+            <script>
+            function mostrarTexto() {
+            // Obtener el valor del número ingresado
+            var numero = parseInt(document.getElementById("numero").value);
+            
+            // Llamar a la función convertirNumeroEnTexto y mostrar el resultado en el elemento con el id "resultado"
+            document.getElementById("resultado").innerHTML = "Valor en texto: " + convertirNumeroEnTexto(numero);
+            }
+            </script>
+</body>
+</html>

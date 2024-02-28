@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#formularioRolPagos {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formularioRolPagos label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formularioRolPagos input[type="text"],
+#formularioRolPagos input[type="number"],
+#formularioRolPagos input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formularioRolPagos input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#formularioRolPagos input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#rolDePagos {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#rolDePagos th,
+#rolDePagos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#rolDePagos th {
+    background-color: #f2f2f2;
+}
+

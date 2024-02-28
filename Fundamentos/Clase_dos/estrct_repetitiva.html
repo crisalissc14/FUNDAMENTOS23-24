@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+</head>
+<body>
+    <h1>Página 4</h1>
+    <p>Este es el contenido de la página</p>
+
+    <!-- enlace a la página 1 -->
+    <a href="index.html">Volver a la página 1</a>
+    <br>
+    <br>
+    <script>
+        // // mostrar los números del uno al diez
+        // for(let i=1; i<=10; i++){
+        //     document.write(i+"<br>");
+        // }
+
+        // mostrar los dígitos
+        let valor;
+        do{
+            valor=parseInt(prompt('Ingrese un valor entre el 0 y 99'));
+            document.write('El valor '+valor+' tiene ');
+            if(valor<10){
+                document.write('un dígito');
+            } else{
+                document.write('dos dígitos');
+            }
+            document.write('<br>');
+        } while(valor!=0);
+    </script>
+</body>
+</html>

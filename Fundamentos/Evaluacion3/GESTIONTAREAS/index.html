@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>INICIO</h1>
+    <H2>BIENVENIDO A LA PÁGINA WEB DE GESTION DE TAREAS	</H2>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" onclick="openNav()">Perfil</a>
+        <a href="index.html">Inicio</a>
+        <a href="./tareas.html">Gestion de Tareas</a>
+        <a href="login.html">Cerrar Sesión</a>
+    </nav>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <h2>Bienvenido al inicio de la pagina web de gestion de tareas</h2>
+
+</body>
+</html>

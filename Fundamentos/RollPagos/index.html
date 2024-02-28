@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rol de Pagos</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <h1>Rol de Pagos</h1>
+
+    <!-- index.html -->
+<form id="formularioRolPagos">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="puesto">Puesto:</label>
+    <input type="text" id="puesto" name="puesto" required><br><br>
+
+    <label for="salarioBase">Salario Base:</label>
+    <input type="text" id="salarioBase" name="salarioBase" required ><br><br>
+
+    <label for="horasExtras">Horas Extras:</label>
+    <input type="text" id="horasExtras" name="horasExtras" required inputmode="numeric"><br><br>
+
+    <label for="bonificaciones">Bonificaciones:</label>
+    <input type="text" id="bonificaciones" name="bonificaciones" required inputmode="numeric"><br><br>
+
+    <input type="submit" value="Calcular y Mostrar en la Tabla">
+</form>
+
+    <table id="rolDePagos">
+        <tr>
+            <th>Nombre</th>
+            <th>Puesto</th>
+            <th>Salario Base</th>
+            <th>Horas Extras</th>
+            <th>Bonificaciones</th>
+            <th>Total a Pagar</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

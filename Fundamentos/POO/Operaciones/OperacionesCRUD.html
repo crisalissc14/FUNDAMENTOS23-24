@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES CRUD</title>
+    <link rel="stylesheet" href="./opeCrud.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>CRUD EMPLEADOS</h1>
+
+        <form id="formulario-empleado">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="cargo" placeholder="Cargo" required>
+            <input type="text" id="edad" placeholder="Edad" required>
+
+            <!-- Agregar botón de "Agregar empleado" -->
+            <button type="submit" id="agregar-btn">Agregar empleado</button>
+
+        </form>
+
+        <!-- Buscar elementos -->
+        <div>
+            <input type="text" id="buscar-input" placeholder="Buscar por nombre" required>
+            <button id="buscar-btn">Buscar</button>
+        </div>
+
+        <!-- Tabla de datos -->
+        <table id="tabla-empleados">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cargo</th>
+                    <th>Edad</th>
+                    <th>Acciones</th> 
+                    <!-- En acciones es para poder seleccionar si desea buscar actualizar eliminar al empleado -->
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="/Operaciones/opeCrud.js"></script>
+</body>
+</html>
