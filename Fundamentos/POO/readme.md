@@ -26,4 +26,5 @@ Ejemplo:
 cons objetoVacío ={};
 console.log(typeof objetoVacío); //'object'
 
+Función obtenemos y hacemos una declaración de su función y el contenido de la función, 
 
