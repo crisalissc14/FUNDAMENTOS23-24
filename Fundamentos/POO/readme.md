@@ -26,5 +26,13 @@ Ejemplo:
 cons objetoVacío ={};
 console.log(typeof objetoVacío); //'object'
 
-Función obtenemos y hacemos una declaración de su función y el contenido de la función, 
+Función obtenemos y hacemos una declaración de su función y el contenido de la función, que funcionan a lo largo de mi codigo. Se guardan varibales dentro de otras variables para después ejecutar esas variables.
+Se pueden declarar funciones como si fueran objetos.
 
+ECMAScript 6
+estándar de lenguaje de scripting desarrollado de acuerdo con las indicaciones contenidas en un documento Ecma International , ocupa de la estandarización en el sector y como implementar mi lenguaje de scripting y los sistemas de comunicación (Java Script, Actiona Script, JSCRIPT) ideales para el lado del cliente, extentido más tarde también del lado del server. 
+
+Objetivos:
+a. Desarrollo de aplicaciones complejas, creación y gestión de bibliotecas mejoradas, mejor generación de código.
+
+Sin embargo a excepción de Microsoft Edge utilizamos en cualquier navegador por sus políticas de configuración.
