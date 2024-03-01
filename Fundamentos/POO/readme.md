@@ -18,3 +18,11 @@ Ideal para la elaboración de formularios
 1. Declaración y llamada de una función : "function"
 2. Arrow functions: función flecha para "=>" elaborar operaciones y obtener su salida como respuesta.
 
+OBJETOS EN JAVA SCRIPT
+un objeto es un tipo de datos en el cual se pueden incluir colecciones de pares clave-valor.
+Estante de usos mútiples que contiene espacio para sus dispositivos y adornos, así como un espacio de almacenamiento.
+Ejemplo:
+<!-- contiene corchetes -->
+cons objetoVacío ={};
+console.log(typeof objetoVacío); //'object'
+
