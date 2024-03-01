@@ -26,3 +26,4 @@ Ejemplo:
 cons objetoVacío ={};
 console.log(typeof objetoVacío); //'object'
 
+
